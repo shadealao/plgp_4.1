@@ -51,7 +51,7 @@ public final class Personnel implements Groupe {
 	}
 	
 	public void affiche() {
-		String info = "Nom : "+ this.nom +"\tPérnom: "+this.prenom + "\tFonctin : "+ this.fonction + "\tAnniversaire : "+ this.birth + "\n";
+		String info = "Nom : "+ this.nom +"\tPérnom: "+this.prenom + "\tFonction : "+ this.fonction + "\tAnniversaire : "+ this.birth + "\n";
 		String tel = "Contacts : \n";
 		if (! telephones.isEmpty()) {
 			for ( String key : telephones.keySet() ) {
