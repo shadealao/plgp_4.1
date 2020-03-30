@@ -3,7 +3,7 @@ package fr.uvsq21506437.Annuaire;
 import java.time.LocalDate;
 import java.util.HashMap;
 
-public final class Personnel {
+public final class Personnel implements Groupe {
 	private final String nom;
 	private final String prenom;
 	private final String fonction;
@@ -50,7 +50,7 @@ public final class Personnel {
 		this.telephones = builder.telephones;
 	}
 	
-	public void getInfo() {
+	public void affiche() {
 		String info = "Nom : "+ this.nom +"\tPérnom: "+this.prenom + "\tFonctin : "+ this.fonction + "\tAnniversaire : "+ this.birth + "\n";
 		String tel = "Contacts : \n";
 		if (! telephones.isEmpty()) {

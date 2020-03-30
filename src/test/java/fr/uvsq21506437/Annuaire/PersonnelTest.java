@@ -13,7 +13,7 @@ public class PersonnelTest extends TestCase{
     	telephones.put("afolabiaweni", "0708440921");
         Personnel personnel = new Personnel.Builder("ALAO AFOLABI", "Shadé").Fonction("étuidante").Birth(LocalDate.of(1996, 8, 03)).Tel(telephones).build();
         
-        personnel.getInfo();
+        personnel.affiche();
 		
 	}
 
